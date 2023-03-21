@@ -2,18 +2,18 @@
   <header>
     <div class="navigation-panel">
       <nav>
-        <span class="navigation-panel__item">Home</span>
-        <span class="navigation-panel__item">About</span>
-        <span class="navigation-panel__item">Contact</span>
+        <router-link to="/" class="navigation-panel__link"><span class="navigation-panel__item">Home</span></router-link>
+        <router-link to="/about" class="navigation-panel__link"><span class="navigation-panel__item">About</span></router-link>
+        <router-link to="/contacts" class="navigation-panel__link"><span class="navigation-panel__item">Contact</span></router-link>
       </nav>
     </div>
     <div class="title">
       Landing
     </div>
     <div class="button-wrapper">
-      <div class="buy-button">
-        <span>Buy now</span>
-      </div>
+      <router-link to="/store" class="buy-button">
+          <span>Buy now</span>
+      </router-link>
     </div>
   </header>
 </template>
@@ -42,6 +42,9 @@ export default {
         font-size: 14px;
         color: #505F98;
       }
+      .navigation-panel__link {
+        text-decoration: none;
+      }
     }
   }
   .title {
@@ -61,6 +64,7 @@ export default {
     border-radius: 2px;
     background: #111B47;
     text-align: center;
+    text-decoration: none;
     span {
       color: white;
       vertical-align: middle;
