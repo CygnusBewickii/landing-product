@@ -32,7 +32,7 @@ export default {
 .wrapper {
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
     background-position: left;
 }
 
