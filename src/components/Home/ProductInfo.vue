@@ -38,12 +38,13 @@ export default {
 
 .container {
     margin: 0 10vw;
+    display: flex;
+    justify-content: end;
 }
 
 .content {
     padding: 20% 0;
     width: 35vw;
-    float: right;
 }
 
 .info {

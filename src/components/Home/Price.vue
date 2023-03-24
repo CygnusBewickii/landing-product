@@ -21,9 +21,11 @@
                     <div class="purchase__description">
                         See, One price. Simple.
                     </div>
-                    <div class="purchase__button">
-                        Purchase Now
-                    </div>
+                    <router-link to="/store">
+                        <div class="purchase__button">
+                            Purchase Now
+                        </div>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -39,7 +41,7 @@ export default {
 <style scoped lang="scss">
 section {
     height: 100vh;
-    background-image: url("src/assets/Rectangle.png");
+    background-image: url("src/assets/price_background.svg");
     background-size: cover;
     .wrapper {
         display: flex;
@@ -47,17 +49,16 @@ section {
         align-items: center;
         .content {
             width: 33.3%;
-            margin-top: 15%;
+            margin-top: 10%;
+            text-align: center;
             .title {
                 font-weight: 500;
                 font-size: 36px;
                 line-height: 48px;
                 color: #091133;
-                text-align: center;
                 margin-bottom: 16px;
             }
             .text {
-                text-align: center;
                 max-width: 600px;
                 font-size: 16px;
                 line-height: 26px;
@@ -65,7 +66,7 @@ section {
                 margin-bottom: 36px;
             }
             .price {
-                text-align: center;
+                margin-bottom: 50px;
                 .price__value {
                     font-weight: 500;
                     font-size: 50px;
@@ -74,7 +75,24 @@ section {
                     color: #222F65;
                 }
                 .price__description {
-                    margin-top: 10px;
+                    margin-top: 5px;
+                }
+            }
+            .purchase {
+                .purchase__description {
+                    font-size: 14px;
+                    color: #5D6970;
+                    margin-bottom: 10px;
+                }
+                .purchase__button {
+                    width: 190px;
+                    margin: 0 auto;
+                    font-weight: 500;
+                    font-size: 14px;
+                    background-color: #111B47;
+                    color: white;
+                    padding: 10px 0;
+                    border-radius: 2px;
                 }
             }
         }
